@@ -128,6 +128,7 @@ main{
     filter: blur(0.5px);
     background: linear-gradient(-310deg, wheat, white);
     align-content: space-between;
+    border-radius: 4px;
 
     &__emp-from-name{
         border-bottom: 0.5px solid gray;

@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews(options =>
 builder.Services.AddDbContext<CDataBase>
     (
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")),
-        ServiceLifetime.Singleton
+        ServiceLifetime.Transient
     );
 builder.Services.AddTransient<CEmployees>();
 builder.Services.AddTransient<CGifts>();
