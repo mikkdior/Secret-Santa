@@ -130,8 +130,7 @@ footer {
   -webkit-box-shadow: 0 0 10px 0px grey;
           box-shadow: 0 0 10px 0px grey;
   border-radius: 4px;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 10px 0 10px;
 }
 
 .santa-tickets .santa-tickets__ticket-template {
