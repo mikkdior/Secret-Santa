@@ -1,0 +1,173 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: #6C757D;
+  padding-bottom: 110px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+footer {
+  text-align: center;
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px 0px grey;
+          box-shadow: 0 0 10px 0px grey;
+  border-radius: 4px;
+}
+
+.container_main {
+  min-height: 720px;
+}
+
+.secret-santa-section__title {
+  text-align: center;
+}
+
+.secret-santa__title {
+  text-align: center;
+}
+
+.santa-panel {
+  position: fixed;
+  left: 75px;
+  top: 31.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px 0px grey;
+          box-shadow: 0 0 10px 0px grey;
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.santa-panel__title {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.santa-buttons__button {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 10px;
+}
+
+.santa-buttons__button_add {
+  background: #C9DDB6;
+}
+
+.santa-buttons__button_rem {
+  background: #EEDDBC;
+}
+
+.santa-tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100%;
+  padding: 40px;
+}
+
+.santa-tickets li {
+  list-style: none;
+  -webkit-box-shadow: 0 0 10px 0px grey;
+          box-shadow: 0 0 10px 0px grey;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.santa-tickets .santa-tickets__ticket-template {
+  display: none;
+}
+
+.santa-ticket {
+  padding: 10px;
+  width: 150px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+  background: linear-gradient(-310deg, wheat, transparent);
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.santa-ticket__emp-from-name {
+  border-bottom: 0.5px solid gray;
+  font-size: 14px;
+}
+
+.santa-ticket__emp-to-name {
+  border-top: 0.5px solid gray;
+  font-size: 14px;
+}
+
+.santa-ticket__gift-name {
+  font-size: 20px;
+  font-weight: 800;
+  background: rgba(0, 128, 0, 0.2);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 27px 23px rgba(0, 128, 0, 0.2);
+          box-shadow: 0px 0px 27px 23px rgba(0, 128, 0, 0.2);
+  text-align: center;
+}
+
+.santa-ticket__from-label, .santa-ticket__to-label, .santa-ticket__gift-name, .santa-ticket__emp-from-name, .santa-ticket__emp-to-name {
+  width: 100%;
+  text-align: center;
+}
+
+.santa-ticket__from-label, .santa-ticket__to-label {
+  font-size: 12px;
+}

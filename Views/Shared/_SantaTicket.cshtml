@@ -1,0 +1,9 @@
+﻿@model CSantaTicketVM
+
+<div class="santa-ticket">
+    <span class="santa-ticket__emp-from-name">@Model.EmpFrom.FirstName @Model.EmpFrom.LastName</span>
+    <span class="santa-ticket__from-label">(from)</span>
+    <h3 class="santa-ticket__gift-name">@Model.GiftName</h3>
+    <span class="santa-ticket__to-label">(to)</span>
+    <span class="santa-ticket__emp-to-name">@Model.EmpTo.FirstName @Model.EmpTo.LastName</span>
+</div>

@@ -1,0 +1,131 @@
+﻿html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    color: #6C757D;
+    padding-bottom: 110px;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+footer{
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+main{
+}
+.container{
+    width: 1200px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0px grey;
+    border-radius: 4px;
+    &_main{
+        min-height: 720px;
+    }
+}
+.secret-santa-section{
+    &__title{
+        text-align: center;
+    }
+}
+.secret-santa{
+    &__title{
+        text-align: center;
+    }
+}
+.santa-panel{
+    position: fixed;
+    left: 75px;
+    top: 31.5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0px grey;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+  
+    &__title{
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+.santa-buttons__button{
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    &_add{
+        background: #C9DDB6;
+    }
+    &_rem{
+        background: #EEDDBC;
+    }
+}
+.santa-tickets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 40px;
+
+    li{
+        list-style: none;
+        box-shadow: 0 0 10px 0px grey;
+        border-radius: 4px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .santa-tickets__ticket-template{
+        display: none;
+    }
+}
+.santa-ticket{
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    filter: blur(0.5px);
+    background: linear-gradient(-310deg, wheat, transparent);
+    align-content: space-between;
+
+    &__emp-from-name{
+        border-bottom: 0.5px solid gray;
+        font-size: 14px;
+    }
+    &__emp-to-name{
+        border-top: 0.5px solid gray;
+        font-size: 14px;
+    }
+    &__gift-name{
+        font-size: 20px;
+        font-weight: 800;
+        background: hsla(120, 100%, 25%, 0.2);
+        border-radius: 50%;
+        box-shadow: 0px 0px 27px 23px hsla(120, 100%, 25%, 0.2);
+        text-align: center;
+    }
+    &__from-label, &__to-label,  &__gift-name, &__emp-from-name, &__emp-to-name{
+        width: 100%;
+        text-align: center;
+    }
+    &__from-label, &__to-label{
+        font-size: 12px;
+    }  
+}

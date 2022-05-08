@@ -1,0 +1,12 @@
+﻿@model CHomeVM
+@{
+    int count = @Model.SantaTickets.Count();
+}
+<div class="santa-panel">
+    <span class="santa-panel__title">Santa Panel</span>
+    <div class="tickets-count">
+        Tickets count: <span class="tickets-count__count">@count</span>
+    </div>
+    @await Html.PartialAsync("_SantaButtons", Model.SantaTickets)
+</div>
+

@@ -1,0 +1,7 @@
+﻿@model CHomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@await Html.PartialAsync("_SecretSantaSection", Model)
+@await Html.PartialAsync("_SantaPanel", Model)

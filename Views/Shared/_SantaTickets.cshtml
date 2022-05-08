@@ -1,0 +1,19 @@
+﻿@model IEnumerable<CSantaTicketVM>
+
+<ul class="santa-tickets">
+    @foreach(var sketch in Model)
+    {
+        <li>
+            @await Html.PartialAsync("_SantaTicket", sketch)
+        </li>
+    }
+    <li class="santa-tickets__ticket-template">
+        <div class="santa-ticket">
+            <span class="santa-ticket__emp-from-name"></span>
+            <span class="santa-ticket__from-label">(from)</span>
+            <h3 class="santa-ticket__gift-name"></h3>
+            <span class="santa-ticket__to-label">(to)</span>
+            <span class="santa-ticket__emp-to-name"></span>
+        </div>
+    </li>
+</ul>
