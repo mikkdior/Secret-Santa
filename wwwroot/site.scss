@@ -71,6 +71,7 @@ main{
     margin-top: 10px;
     box-shadow: 0 0 10px 0px grey;
     border-radius: 4px;
+    outline: none;
     &_add{
         background: #C9DDB6;
     }
@@ -83,6 +84,11 @@ main{
     &:focus{
         box-shadow: 0 0 10px 0px grey;
     }
+    &:active {
+        background-color: #acadac;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
 }
 .santa-tickets{
     display: flex;
@@ -98,6 +104,13 @@ main{
         box-shadow: 0 0 10px 0px grey;
         border-radius: 4px;
         margin: 20px 10px 0 10px;
+        transition: all 200ms;
+        &:hover{
+            transform: scale(1.2);
+            box-shadow: 0 0 20px 0px lightgrey;
+            border-radius: 4px;
+            cursor: grab;
+        }
     }
     .santa-tickets__ticket-template{
         display: none;
@@ -113,7 +126,7 @@ main{
     align-items: center;
     overflow: hidden;
     filter: blur(0.5px);
-    background: linear-gradient(-310deg, wheat, transparent);
+    background: linear-gradient(-310deg, wheat, white);
     align-content: space-between;
 
     &__emp-from-name{
@@ -138,5 +151,5 @@ main{
     }
     &__from-label, &__to-label{
         font-size: 12px;
-    }  
+    }
 }
