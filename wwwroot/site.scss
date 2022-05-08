@@ -49,7 +49,7 @@ main{
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 0 10px 0px grey;
-    height: 200px;
+    min-height: 200px;
     justify-content: center;
     align-items: center;
     align-content: space-around;
@@ -61,15 +61,27 @@ main{
         padding-bottom: 10px;
     }
 }
+.santa-buttons{
+    margin-bottom: 10px;
+}
 .santa-buttons__button{
+    opacity: 0.9;
     width: 100%;
     height: max-content;
     margin-top: 10px;
+    box-shadow: 0 0 10px 0px grey;
+    border-radius: 4px;
     &_add{
         background: #C9DDB6;
     }
     &_rem{
         background: #EEDDBC;
+    }
+    &:hover{
+        filter: brightness(1.1);
+    }
+    &:focus{
+        box-shadow: 0 0 10px 0px grey;
     }
 }
 .santa-tickets{

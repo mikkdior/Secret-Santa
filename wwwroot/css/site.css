@@ -56,7 +56,7 @@ footer {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 10px 0px grey;
           box-shadow: 0 0 10px 0px grey;
-  height: 200px;
+  min-height: 200px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -74,12 +74,20 @@ footer {
   padding-bottom: 10px;
 }
 
+.santa-buttons {
+  margin-bottom: 10px;
+}
+
 .santa-buttons__button {
+  opacity: 0.9;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-top: 10px;
+  -webkit-box-shadow: 0 0 10px 0px grey;
+          box-shadow: 0 0 10px 0px grey;
+  border-radius: 4px;
 }
 
 .santa-buttons__button_add {
@@ -88,6 +96,16 @@ footer {
 
 .santa-buttons__button_rem {
   background: #EEDDBC;
+}
+
+.santa-buttons__button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+.santa-buttons__button:focus {
+  -webkit-box-shadow: 0 0 10px 0px grey;
+          box-shadow: 0 0 10px 0px grey;
 }
 
 .santa-tickets {
