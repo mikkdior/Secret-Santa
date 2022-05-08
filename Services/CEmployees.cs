@@ -44,8 +44,10 @@ public class CEmployees
     /// </summary>
     private void LayoffRandomEmps(int count = 1)
     {
+        if (EmpsCount == 0) return;
+
         for (int i = 0; i < count; i++)
-            _Db.Remove(CSantaHelper.ChooseRandom(_Db.Employees));
+            _Db.Employees.Remove(CSantaHelper.ChooseRandom(_Db.Employees));
 
         _Db.SaveChanges();
     }

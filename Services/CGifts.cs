@@ -53,7 +53,6 @@ public class CGifts
         else RemoveRandomGifts(count);
         
         SetRandomGifts();
-        _Db.SaveChanges();
     }
 
     /// <summary>
@@ -77,11 +76,13 @@ public class CGifts
     /// </summary>
     private void RemoveRandomGifts(int count = 1)
     {
+        if (GiftsCount == 0) return;
+
         for (int i = 0; i < count; i++)
         {
             _Db.Gifts.Remove(CSantaHelper.ChooseRandom(GetGifts()));
-            _Db.SaveChanges();
         }
+        _Db.SaveChanges();
     }
 
     /// <summary>
