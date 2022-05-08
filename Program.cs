@@ -1,10 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews(options =>
-{
-    options.RespectBrowserAcceptHeader = true;
-});
-
+builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CDataBase>
     (
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")),
